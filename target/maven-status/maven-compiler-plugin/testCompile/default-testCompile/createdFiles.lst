@@ -1,0 +1,12 @@
+es\nebsyst\sarlabinit\test\otros\AccessTest.class
+es\nebsyst\sarlabinit\test\integracion\FxmlCssLoadTest.class
+es\nebsyst\sarlabinit\test\unidad\StageManagerTest.class
+es\nebsyst\sarlabinit\test\validacion\DiscoveryUITest.class
+es\nebsyst\sarlabinit\test\otros\StylesTest.class
+es\nebsyst\sarlabinit\test\integracion\NavigationTest.class
+es\nebsyst\sarlabinit\test\integracion\RobustTest.class
+es\nebsyst\sarlabinit\test\unidad\FXMLLoaderManagerTest.class
+es\nebsyst\sarlabinit\test\validacion\SarlabUITest.class
+es\nebsyst\sarlabinit\test\otros\SnapshotTest.class
+es\nebsyst\sarlabinit\test\base\BaseFXTest.class
+es\nebsyst\sarlabinit\test\otros\PerfSarlabTest.class
