@@ -15,15 +15,19 @@ import org.testfx.api.FxRobot;
 /**
  *
  * @author alumno
+ * 
+ * Verifica el registro, recuperación y sobreescritura de ventanas
+ * 
  */
 public class StageManagerTest extends BaseFXTest {
 
   @Test
   @DisplayName("PT-U1 — StageManager: registrar y recuperar Stage por clave")
   void registerAndGetStage(FxRobot robot) {
-    onFx(robot, () -> {
-      var smgr = StageManager.getInstance();
-      var stage = new Stage();
+    onFx(robot, () -> 
+    {
+      StageManager smgr = StageManager.getInstance();
+      Stage stage = new Stage();
       smgr.registerStage("PanelEJSAppList", stage);
       assertSame(stage, smgr.getStage("PanelEJSAppList"));
     });
@@ -32,10 +36,11 @@ public class StageManagerTest extends BaseFXTest {
   @Test
   @DisplayName("PT-U2 — StageManager: sobrescritura de clave")
   void overwriteStage(FxRobot robot) {
-    onFx(robot, () -> {
-      var smgr = StageManager.getInstance();
-      var s1 = new Stage();
-      var s2 = new Stage();
+    onFx(robot, () -> 
+    {
+      StageManager smgr = StageManager.getInstance();
+      Stage s1 = new Stage();
+      Stage s2 = new Stage();
       smgr.registerStage("PanelClientServerName", s1);
       smgr.registerStage("PanelClientServerName", s2);
       assertSame(s2, smgr.getStage("PanelClientServerName"));

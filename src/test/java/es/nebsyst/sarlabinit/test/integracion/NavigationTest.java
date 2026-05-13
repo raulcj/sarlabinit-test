@@ -18,24 +18,28 @@ import org.testfx.api.FxRobot;
 /**
  *
  * @author alumno
+ * 
+ * Comprueba la recuperación de una ventana previamente cargada.
+ * 
  */
 public class NavigationTest extends BaseFXTest {
 
   @Test
   @DisplayName("PT-01 — Flujo 'Restaurar': Stage registrado + carga de Scene + show() de Stage")
-  void restoreAppSarlabOnRegisteredStage(FxRobot robot) {
+  void restoreAppSarlabOnRegisteredStage(FxRobot robot) 
+  {
     onFx(robot, () -> {
       try {
-        Stage mainStage = new Stage();
-        StageManager.getInstance().registerStage("PanelEJSAppList", mainStage);
+        Stage stage = new Stage();
+        StageManager.getInstance().registerStage("PanelEJSAppList", stage);
 
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/es/nebsyst/sarlabinit/view/PanelEJSAppList.fxml"));
         Parent root = fxmlLoader.load();
 
-        mainStage.setScene(new Scene(root));
-        mainStage.show();
+        stage.setScene(new Scene(root));
+        stage.show();
 
-        assertTrue(mainStage.isShowing());
+        assertTrue(stage.isShowing());
         assertNotNull(fxmlLoader.getController());
       } catch (Exception e) { 
           fail(e); 

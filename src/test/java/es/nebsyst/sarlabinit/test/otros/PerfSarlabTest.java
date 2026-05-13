@@ -16,12 +16,18 @@ import org.testfx.util.WaitForAsyncUtils;
 /**
  *
  * @author alumno
+ * 
+ * Calcula tiempo de apertura de vista PanelEJSAppList y valida limite de 2 segundos
+ * 
  */
-public class PerfSarlabTest extends BaseFXTest {
+public class PerfSarlabTest extends BaseFXTest 
+
+{
 
   @DisplayName("PT-R1 — Rendimiento: apertura SARLABINIT < 2.0 s")
-  @RepeatedTest(5) // 5-10 iteraciones
-  void sarLabOpensInTime(FxRobot robot) {
+  @RepeatedTest(5) // realiza 5 iteraciones
+          
+  void sarLabInitOpensInTime(FxRobot robot) {
     long[] ms = new long[1];
     onFx(robot, () -> {
       try {
@@ -31,9 +37,12 @@ public class PerfSarlabTest extends BaseFXTest {
         primaryStage.show();
         WaitForAsyncUtils.waitForFxEvents();
         ms[0] = (System.nanoTime() - t0) / 1_000_000;
-      } catch (Exception e) { throw new RuntimeException(e); }
+      } catch (Exception e) { 
+          throw new RuntimeException(e); 
+      }
     });
-    assertTrue(ms[0] < 2000, "La apertura de SARLAB ha tardado: " + ms[0] + " ms");
+    
+    assertTrue(ms[0] < 2000, "La apertura de PanelEJSAppList (SARLABINIT) ha tardado: " + ms[0] + " ms");
   }
   
 }

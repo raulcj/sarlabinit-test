@@ -16,14 +16,18 @@ import org.testfx.api.FxRobot;
 /**
  *
  * @author alumno
+ * 
+ * Comprueba el registro de cargadores FXML. Verifica carga de la vista y de su controlador asociado.
+ * 
  */
 public class FXMLLoaderManagerTest extends BaseFXTest {
 
   @Test
   @DisplayName("PT-02 — FXMLLoaderManager: carga de FXML válido e inyecta controlador")
   void checkLoaderLoadAndController(FxRobot robot) {
-    onFx(robot, () -> {
-      var fmgr = FXMLLoaderManager.getInstance();
+    onFx(robot, () -> 
+    {
+      FXMLLoaderManager fmgr = FXMLLoaderManager.getInstance();
       FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/es/nebsyst/sarlabinit/view/PanelEJSAppList.fxml"));
       fmgr.registerLoader("PanelEJSAppList", fxmlLoader);
       Parent root = assertDoesNotThrow(() -> {

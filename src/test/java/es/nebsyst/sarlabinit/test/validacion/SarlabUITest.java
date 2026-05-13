@@ -16,14 +16,20 @@ import org.testfx.api.FxRobot;
 /**
  *
  * @author alumno
+ * 
+ * Verifica la visibilidad de controles en dos vistas diferentes.
+ * 
  */
-public class SarlabUITest extends BaseFXTest {
+public class SarlabUITest extends BaseFXTest 
+{
     
   @Test
   @DisplayName("PT-04 — PanelMain: comprueba controles básicos visibles")
-  void mainPanelControls(FxRobot robot) {
+  void mainPanelControls(FxRobot robot) 
+  {
     onFx(robot, () -> {
-      try {
+      try 
+      {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/es/nebsyst/sarlabinit/view/PanelMain.fxml"));
         primaryStage.setScene(new Scene(fxmlLoader.load()));
         primaryStage.show();
@@ -36,7 +42,7 @@ public class SarlabUITest extends BaseFXTest {
   }
   
   @Test
-  @DisplayName("PT-05 — PanelJarProcess: comprueba componentes importantes visibles")
+  @DisplayName("PT-05 — PanelJarProcess: comprueba componente visible")
   void jarProcessCheck(FxRobot robot) {
     onFx(robot, () -> {
       try {

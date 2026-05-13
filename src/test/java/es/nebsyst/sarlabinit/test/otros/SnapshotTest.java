@@ -19,9 +19,13 @@ import org.testfx.api.FxRobot;
 /**
  *
  * @author alumno
+ * 
+ * Realiza una captura de pantalla de la vista principal de SARLABINIT (PanelEJSAppList) sin CSS
+ * y la guarda la almacena en /target/screenshots con formato PNG
+ * 
  */
-public class SnapshotTest extends BaseFXTest {
-
+public class SnapshotTest extends BaseFXTest 
+{
   @Test
   @DisplayName("PT-SNAP1 — Snapshot: guardar captura de la vista principal")
   void saveMainSnapshot(FxRobot robot) {
@@ -34,7 +38,9 @@ public class SnapshotTest extends BaseFXTest {
         File out = new File("target/screenshots/sarlabinit_main.png");
         out.getParentFile().mkdirs();
         ImageIO.write(SwingFXUtils.fromFXImage(img, null), "png", out);
-      } catch (Exception e) { throw new RuntimeException(e); }
+      } catch (Exception e) { 
+          throw new RuntimeException(e); 
+      }
     });
     assertTrue(new File("target/screenshots/sarlabinit_main.png").exists());
   }

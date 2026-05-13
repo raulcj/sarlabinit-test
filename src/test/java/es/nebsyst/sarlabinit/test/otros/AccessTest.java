@@ -20,6 +20,10 @@ import static org.testfx.matcher.base.NodeMatchers.isVisible;
 /**
  *
  * @author alumno
+ * 
+ * 
+ * Comprueba visibilidad de control boton y navegacion por teclado
+ * 
  */
 public class AccessTest extends BaseFXTest {
 
@@ -66,7 +70,7 @@ public class AccessTest extends BaseFXTest {
     // lógica de la tecla TAB
     robot.type(KeyCode.TAB); 
     robot.type(KeyCode.TAB);
-    // se verifica la visibilidad del foco en botón Actualizar
+    // se verifica la visibilidad del foco rn boton Actualizar
     verifyThat("#jButtonActualizar", isVisible());
   }
    

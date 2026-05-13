@@ -17,9 +17,15 @@ import org.testfx.framework.junit5.Start;
 /**
  *
  * @author alumno
+ * 
+ * Clase base para las pruebas.
+ * 
+ * Inicializa ventana principal y asegura ejecución de métodos en el hilo de JavaFX
+ * 
  */
 @ExtendWith(ApplicationExtension.class)
-public abstract class BaseFXTest {
+public abstract class BaseFXTest 
+{   
 
   protected Stage primaryStage;
 
@@ -37,7 +43,7 @@ public abstract class BaseFXTest {
   }
   
   /** 
-   * Habilita ejecucción segura en el hilo de JavaFX  
+   * Asegurar ejecucion en hilo de JavaFX  
    *
    */
   protected void onFx(FxRobot robot, Runnable action) {

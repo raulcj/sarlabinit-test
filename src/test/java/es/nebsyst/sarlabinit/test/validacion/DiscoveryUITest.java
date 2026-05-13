@@ -19,8 +19,12 @@ import org.testfx.api.FxRobot;
 /**
  *
  * @author alumno
- */
-public class DiscoveryUITest extends BaseFXTest {
+ * 
+ * Comprueba la carga de vistas y la visibilidad de componentes-controles.
+ * 
+ */ 
+public class DiscoveryUITest extends BaseFXTest 
+{
 
   /** 
    * Carga y registra PanelMain en el FXMLLoaderManager, dejando su controlador disponible
@@ -89,10 +93,10 @@ public class DiscoveryUITest extends BaseFXTest {
   @DisplayName("PT-09 — DISCOVERY: botones Desktop/VNC/Telnet/SSH/Actualizar visibles")
   void buttonsVisible(FxRobot robot) {
     showDiscovery(robot);
-    verifyThat("#jButtonDesktop",    isVisible());
-    verifyThat("#jButtonVNC",        isVisible());
-    verifyThat("#jButtonTelnet",     isVisible());
-    verifyThat("#jButtonSsh",        isVisible());
+    verifyThat("#jButtonDesktop", isVisible());
+    verifyThat("#jButtonVNC", isVisible());
+    verifyThat("#jButtonTelnet", isVisible());
+    verifyThat("#jButtonSsh", isVisible());
     verifyThat("#jButtonActualizar", isVisible());
   }
 
