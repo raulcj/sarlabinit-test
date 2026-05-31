@@ -38,7 +38,7 @@ public class SarlabUITest extends BaseFXTest
       }
     });
     verifyThat("#langCombo", isVisible());
-    verifyThat("#bAccept", isVisible());
+    verifyThat("#cssCombo", isVisible());
   }
   
   @Test

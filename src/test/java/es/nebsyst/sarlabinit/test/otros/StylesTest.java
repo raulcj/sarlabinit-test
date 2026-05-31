@@ -28,10 +28,10 @@ public class StylesTest extends BaseFXTest
 
 {
 
-    private static final String CSS_PATH = "/es/styles/sarlab-main.css";
+    private static final String CSS_PATH = "/es/styles/sarlab-main-blue.css";
 
     @Test
-    @DisplayName("PT-E1 — CSS global: StyleManager aplica la hoja correctamente")
+    @DisplayName("PT-E1 — CSS global: StyleManager aplica una hoja de estilos correctamente")
     void cssCheck(FxRobot robot) {
         URL cssPath = getClass().getResource(CSS_PATH);
         assertNotNull(cssPath,"No se ha encontrado la hoja " + CSS_PATH + " en el classpath de pruebas");
@@ -42,7 +42,7 @@ public class StylesTest extends BaseFXTest
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/es/nebsyst/sarlabinit/view/PanelMain.fxml"));
                 Parent root = loader.load();
                 assertNotNull(loader.getController(), "El controlador de la vista no ha sido inyectado");
-                Scene scene = StyleManager.createSceneCss(root);
+                Scene scene = StyleManager.getInstance().createSceneCss(root);
                 // Aplicar estilo y mostrar hoja
                 primaryStage.setScene(scene);
                 primaryStage.show();

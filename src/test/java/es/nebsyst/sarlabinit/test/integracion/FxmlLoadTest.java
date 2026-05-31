@@ -33,7 +33,7 @@ public class FxmlLoadTest extends BaseFXTest {
             assertNotNull(root, "La raiz del fichero FXML no puede ser nula");
             assertNotNull(loader.getController(),"El controlador debe inyectarse correctamente.");        
             // Comprobar Scene no nula
-            Scene scene = StyleManager.createSceneCss(root);
+            Scene scene = StyleManager.getInstance().createSceneCss(root);
             assertNotNull(scene, "La Scene creada no puede ser nula");
             // Comprobar Scene incluida en Stage
             primaryStage.setScene(scene);
