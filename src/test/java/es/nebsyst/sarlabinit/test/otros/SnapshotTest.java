@@ -4,6 +4,7 @@
  */
 package es.nebsyst.sarlabinit.test.otros;
 
+import es.nebsyst.sarlabinit.main.StyleManager;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import es.nebsyst.sarlabinit.test.base.BaseFXTest;
 import java.io.File;
@@ -32,7 +33,9 @@ public class SnapshotTest extends BaseFXTest
     onFx(robot, () -> {
       try {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/es/nebsyst/sarlabinit/view/PanelEJSAppList.fxml"));
-        primaryStage.setScene(new Scene(fxmlLoader.load()));
+        // Added: Añadir estilo a la escena
+        Scene scene = StyleManager.getInstance().createSceneCss(fxmlLoader.load());
+        primaryStage.setScene(scene);
         primaryStage.show();
         WritableImage img = primaryStage.getScene().snapshot(null);
         File out = new File("target/screenshots/sarlabinit_main.png");
