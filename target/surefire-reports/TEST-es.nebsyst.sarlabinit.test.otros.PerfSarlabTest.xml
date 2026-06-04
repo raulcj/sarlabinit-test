@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="es.nebsyst.sarlabinit.test.otros.PerfSarlabTest" time="2.857" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="es.nebsyst.sarlabinit.test.otros.PerfSarlabTest" time="2.886" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="javafx.runtime.version" value="21.0.6+3"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\alumno\AppData\Local\Temp\surefire3977214234001977866\surefirebooter-20260604102320212_3.jar C:\Users\alumno\AppData\Local\Temp\surefire3977214234001977866 2026-06-04T10-23-19_935-jvmRun1 surefire-20260604102320212_1tmp surefire_0-20260604102320212_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\alumno\AppData\Local\Temp\surefire17265898040266122229\surefirebooter-20260604123142496_3.jar C:\Users\alumno\AppData\Local\Temp\surefire17265898040266122229 2026-06-04T12-31-42_192-jvmRun1 surefire-20260604123142496_1tmp surefire_0-20260604123142496_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\alumno\Documents\NetBeansProjects\sarlabinit-test\target\test-classes;C:\Users\alumno\Documents\NetBeansProjects\sarlabinit-test\target\classes;C:\Users\alumno\.m2\repository\org\openjfx\javafx-base\21.0.6\javafx-base-21.0.6-win.jar;C:\Users\alumno\.m2\repository\org\openjfx\javafx-graphics\21.0.6\javafx-graphics-21.0.6-win.jar;C:\Users\alumno\.m2\repository\org\openjfx\javafx-base\21.0.6\javafx-base-21.0.6.jar;C:\Users\alumno\.m2\repository\org\openjfx\javafx-controls\21.0.6\javafx-controls-21.0.6-win.jar;C:\Users\alumno\.m2\repository\org\openjfx\javafx-graphics\21.0.6\javafx-graphics-21.0.6.jar;C:\Users\alumno\.m2\repository\org\openjfx\javafx-swing\21.0.6\javafx-swing-21.0.6.jar;C:\Users\alumno\.m2\repository\org\openjfx\javafx-swing\21.0.6\javafx-swing-21.0.6-win.jar;C:\Users\alumno\.m2\repository\org\openjfx\javafx-fxml\21.0.6\javafx-fxml-21.0.6-win.jar;C:\Users\alumno\.m2\repository\org\openjfx\javafx-controls\21.0.6\javafx-controls-21.0.6.jar;C:\Users\alumno\Documents\NetBeansProjects\sarlabinit-test\dist\sarlabinit-tfg.jar;C:\Users\alumno\.m2\repository\org\junit\jupiter\junit-jupiter\5.6.0\junit-jupiter-5.6.0.jar;C:\Users\alumno\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\alumno\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\alumno\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\alumno\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\alumno\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;C:\Users\alumno\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\alumno\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;C:\Users\alumno\.m2\repository\org\testfx\testfx-core\4.0.18\testfx-core-4.0.18.jar;C:\Users\alumno\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\alumno\.m2\repository\org\assertj\assertj-core\3.13.2\assertj-core-3.13.2.jar;C:\Users\alumno\.m2\repository\org\osgi\org.osgi.core\6.0.0\org.osgi.core-6.0.0.jar;C:\Users\alumno\.m2\repository\org\testfx\testfx-junit5\4.0.18\testfx-junit5-4.0.18.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -32,7 +32,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\alumno\AppData\Local\Temp\surefire3977214234001977866\surefirebooter-20260604102320212_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\alumno\AppData\Local\Temp\surefire17265898040266122229\surefirebooter-20260604123142496_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
@@ -58,9 +58,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="sarLabInitOpensInTime(FxRobot)[1]" classname="es.nebsyst.sarlabinit.test.otros.PerfSarlabTest" time="0.578"/>
-  <testcase name="sarLabInitOpensInTime(FxRobot)[2]" classname="es.nebsyst.sarlabinit.test.otros.PerfSarlabTest" time="0.557"/>
-  <testcase name="sarLabInitOpensInTime(FxRobot)[3]" classname="es.nebsyst.sarlabinit.test.otros.PerfSarlabTest" time="0.565"/>
-  <testcase name="sarLabInitOpensInTime(FxRobot)[4]" classname="es.nebsyst.sarlabinit.test.otros.PerfSarlabTest" time="0.555"/>
+  <testcase name="sarLabInitOpensInTime(FxRobot)[1]" classname="es.nebsyst.sarlabinit.test.otros.PerfSarlabTest" time="0.597"/>
+  <testcase name="sarLabInitOpensInTime(FxRobot)[2]" classname="es.nebsyst.sarlabinit.test.otros.PerfSarlabTest" time="0.553"/>
+  <testcase name="sarLabInitOpensInTime(FxRobot)[3]" classname="es.nebsyst.sarlabinit.test.otros.PerfSarlabTest" time="0.581"/>
+  <testcase name="sarLabInitOpensInTime(FxRobot)[4]" classname="es.nebsyst.sarlabinit.test.otros.PerfSarlabTest" time="0.568"/>
   <testcase name="sarLabInitOpensInTime(FxRobot)[5]" classname="es.nebsyst.sarlabinit.test.otros.PerfSarlabTest" time="0.567"/>
 </testsuite>

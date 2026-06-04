@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: es.nebsyst.sarlabinit.test.otros.SnapshotTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.991 s -- in es.nebsyst.sarlabinit.test.otros.SnapshotTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.811 s -- in es.nebsyst.sarlabinit.test.otros.SnapshotTest
