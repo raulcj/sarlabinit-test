@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: es.nebsyst.sarlabinit.test.unidad.StageManagerTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.761 s -- in es.nebsyst.sarlabinit.test.unidad.StageManagerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.787 s -- in es.nebsyst.sarlabinit.test.unidad.StageManagerTest
